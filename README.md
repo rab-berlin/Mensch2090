@@ -32,6 +32,24 @@ Geht's einfacher?
 
 Ja. Wir nutzen die Ausgänge als "zusätzliches" Register. Mit DOT wird der Registerinhalt 0 oder 8 (Computer ist dran oder Mensch ist dran) auf die Ausgänge gelegt, also Ausgang 4 auf High oder Low geschaltet. Mit DIN können wir dann diesen Inhalt wieder einlesen, wann und wo immer es nötig ist - vorausgesetzt, wir haben ein Kabel von Ausgang 4 zu Eingang 4 gelegt.  
 
+## Multifunktional...
+
+Funktionen im klassischen Sinne kennt der Microtronic nicht. Will man etwas Vergleichbares programmieren, müsste man gezielt ein bestimmtes Register mit dem Rückgabewert füllen und dieses Register nach Rückkehr aus dem Unterprogramm auswerten. Dieses Auswerten wäre allerdings dann wieder mit zahlreichen Vergleichen verbunden; die Programmschritte würden schneller dahinschmelzen als ein Ed-von-Schleck in der Sonne.
+
+Allerdings gibt es das Carry- und Zero-Flag (bzw. die totale Abwesenheit von Flags). Theoretisch also drei Zustände als Rückgabewerte einer Funktion. Praktisch nutzt das Unterprogramm Test0 diese Möglichkeiten:
+
+...
+
+Test0 soll folgendes zurückgeben: 
+- ob der Pöppel noch im Haus ist (Feld 00)
+- oder ob der Pöppel auf dem Stadtfeld steht (Feld 01)
+- oder ob der Pöppel "normal" auf dem Brett steht (Feld >= 02)
+
+Und macht das auch:
+- Kein Flag, wenn noch im Haus,
+- Zero-Flag, wenn auf Startfeld,
+- Carry-Flag, wenn normal auf dem Brett
+
 ## Gewinnerkennung
 
 war geradezu lächerlich einfach. Durch die vor jedem Zug erfolgte Sortierung der Pöppel muss nur ein Kriterium überprüft werden: Ist der letzte Pöppel (P1) im Ziel, also auf Feld 29 hex angekommen? Falls ja, dann gewonnen. Fertig.
