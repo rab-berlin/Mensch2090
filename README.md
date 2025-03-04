@@ -8,6 +8,14 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 ## Strategie
 
+Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben ab allerdings auch nur 256 Programmschritte :-)
+
+Ich will nicht alles verraten, spiel doch einfach ein paar Runden mit dem 2090. Dann dürfte der Masterplan des Microtronic ziemlich rasch deutlich werden - eine Mischung aus Krümelmonster und Lauf, Forrest, lauf. 
+
+Komplexere Strategien lassen sich leider nicht verwirklichen, also läuft der Microtronic öfter mal äußerst mutig direkt "vor die Flinte". Schlägt aber im Gegenzug auch erbarmungslos alles, was in Reichweite ist.
+
+Mich hat er jedenfalls mehrmals brutalst abgezockt... 
+
 ## Ein Königreich für ein Register
 
 Wer ist gerade dran, Computer oder Mensch? Irgendwo muss diese Information hinterlegt werden, und diese Information muss über alle Spielzüge erhalten bleiben. Das ist angesichts des begrenzten Register-Speichers gar nicht so einfach.
