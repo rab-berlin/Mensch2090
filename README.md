@@ -24,13 +24,13 @@ Die Register 8 und 9 (Zielfeld) sowie die Register A und B (Testfeld) brauchen w
 
 Übrig bleibt als einziges Register C. Aber das brauchen wir auch noch für ein Flag zur Erkennung, ob das Startfeld geräumt werden muss (dazu mehr unter Test0).
 
-Also alle Register belegt :-( Woher noch ein zusätzliches Register nehmen (dessen Inhalt dem Spielzug übersteht)?
+Also alle Register belegt :-( Woher noch ein zusätzliches Register nehmen (dessen Inhalt den Spielzug übersteht)?
 
 Man könnte natürlich ein Speicherregister dazu nutzen: Vor dem Spielzug mit MAS (move Addressregister in Speicherregister) sichern und später mit EXRH, MAS und nochmal EXRH den Inhalt zurückholen. Braucht aber 4 wertvolle Programmschritte für jede Abfrage.
 
 Geht's einfacher?
 
-Ja. Wir nutzen die Ausgänge als "zusätzliches" Register. Mit DOT wird der Registerinhalt 0 oder 8 (Computer ist dran oder Mensch ist dran) auf die Ausgänge gelegt, also Ausgang 4 auf High oder Low geschaltet. Mit DIN können wir dann diesen Inhalt wieder einlesen, wo immer es nötig ist - vorausgesetzt, wir haben ein Kabel von Ausgang 4 zu Eingang 4 gelegt.  
+Ja. Wir nutzen die Ausgänge als "zusätzliches" Register. Mit DOT wird der Registerinhalt 0 oder 8 (Computer ist dran oder Mensch ist dran) auf die Ausgänge gelegt, also Ausgang 4 auf High oder Low geschaltet. Mit DIN können wir dann diesen Inhalt wieder einlesen, wann und wo immer es nötig ist - vorausgesetzt, wir haben ein Kabel von Ausgang 4 zu Eingang 4 gelegt.  
 
 ## Gewinnerkennung
 
