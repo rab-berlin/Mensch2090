@@ -58,7 +58,7 @@ Die Register 8 und 9 (Zielfeld) sowie die Register A und B (Testfeld) brauchen w
 
 Also alle Register belegt :-( Woher noch ein zusätzliches Register nehmen (dessen Inhalt den Spielzug übersteht)?
 
-Man könnte natürlich ein Speicherregister dazu nutzen: Vor dem Spielzug mit MAS (move Addressregister in Speicherregister) sichern und später mit EXRM, MAS und nochmal EXRM den Inhalt zurückholen. Braucht aber 4 wertvolle Programmschritte für jede Abfrage.
+Man könnte natürlich ein Speicherregister dazu nutzen: Vor dem Spielzug mit MAS (move Arbeitsregister in Speicherregister) sichern und später mit EXRM, MAS und nochmal EXRM den Inhalt zurückholen. Braucht aber 4 wertvolle Programmschritte für jede Abfrage.
 
 Geht's einfacher?
 
