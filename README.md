@@ -12,7 +12,11 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 Das erste "eigene" Programm des Microtronic war ein "elektronischer Würfel" (Anleitungsbuch 1. Teil, Seite 11). Und ich kann mich noch gut erinnern, wie begeistert ich war. Der würfelt, guck mal! Ich habe bestimmt stundenlang immer neue Zahlen gewürfelt, damals Weihnachten 1981, und alle genervt, sie sollen auch mal auf den Knopf drücken...
 
+![Allererstes Programm](/pics/erstes.jpg)
 
+Über 40 Jahre war ich der Überzeugung, kürzer geht's nicht.
+
+Geht's aber doch! Ein Vergleich mit 0 ist nicht nötig, stattdessen addieren wir einfach 1 zu einer Zufallszahl zwischen 0 und 5:
 
 ```
 Würfel	RND
@@ -20,12 +24,12 @@ Würfel	RND
 	BRC Würfel
 	ADDI #1,AUGEN
 ```
-Kleinvieh macht auch Mist. 
+Kleinvieh macht auch Mist, spart einen Befehl.
 
 ## Zugliste
 
 
-
+geht's
 ## Strategie
 
 Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben allerdings auch nur 256 Programmschritte :-)
