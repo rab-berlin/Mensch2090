@@ -8,7 +8,7 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 ## Strategie
 
-Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben ab allerdings auch nur 256 Programmschritte :-)
+Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben allerdings auch nur 256 Programmschritte :-)
 
 Ich will nicht alles verraten, spiel doch einfach ein paar Runden mit dem 2090. Dann dürfte der Masterplan des Microtronic ziemlich rasch deutlich werden - eine Mischung aus Krümelmonster und Lauf, Forrest, lauf. 
 
