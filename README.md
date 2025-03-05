@@ -46,12 +46,12 @@ Funktionen im klassischen Sinne kennt der Microtronic nicht. Will man etwas Verg
 
 Allerdings gibt es das Carry- und Zero-Flag (bzw. die totale Abwesenheit von Flags). Theoretisch also drei Zustände als Rückgabewerte einer Funktion. Praktisch nutzt das Unterprogramm Test0 diese Möglichkeiten:
 
-´´´
-Test0         CMPI #0,ZIELFELD2
+```
+Test0               CMPI #0,ZIELFELD2
 	            BRC EndeTest0
 	            CMPI #1,ZIELFELD1
 EndeTest0	    RET
-´´´
+```
 
 Test0 soll folgendes zurückgeben: 
 - ob der Pöppel noch im Haus ist (Feld 00)
