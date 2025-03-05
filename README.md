@@ -6,6 +6,24 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 ## Alles ist relativ
 
+## Würfel
+
+Das erste "eigene" Programm des Microtronic war ein "elektronischer Würfel" (Anleitungsbuch 1. Teil, Seite 11). Und ich kann mich noch gut erinnern, wie begeistert ich war. Der würfelt, guck mal! Ich habe bestimmt stundenlang immer neue Zahlen gewürfelt, damals Weihnachten 1981, und alle genervt, sie sollen auch mal auf den Knopf drücken...
+
+
+
+```
+Würfel	RND
+	CMPI #5,AUGEN
+	BRC Würfel
+	ADDI #1,AUGEN
+```
+Kleinvieh macht auch Mist. 
+
+## Zugliste
+
+
+
 ## Strategie
 
 Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben allerdings auch nur 256 Programmschritte :-)
