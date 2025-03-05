@@ -42,15 +42,20 @@ Ja. Wir nutzen die Ausgänge als "zusätzliches" Register. Mit DOT wird der Regi
 
 ## Multifunktional...
 
-Funktionen im klassischen Sinne kennt der Microtronic nicht. Will man etwas Vergleichbares programmieren, müsste man gezielt ein bestimmtes Register mit dem Rückgabewert füllen und dieses Register nach Rückkehr aus dem Unterprogramm auswerten. Dieses Auswerten wäre allerdings dann wieder mit zahlreichen Vergleichen verbunden; die Programmschritte würden schneller dahinschmelzen als ein Ed-von-Schleck in der Sonne.
+Funktionen im klassischen Sinne kennt der Microtronic nicht. Will man etwas Vergleichbares programmieren, müsste man gezielt ein bestimmtes Register mit dem Rückgabewert füllen und dieses Register nach Rückkehr aus dem Unterprogramm (also der "Funktion") auswerten. Dieses Auswerten wäre allerdings dann wieder mit zahlreichen Vergleichen verbunden; die Programmschritte würden schneller dahinschmelzen als ein Ed-von-Schleck in der Sonne.
 
 Allerdings gibt es das Carry- und Zero-Flag (bzw. die totale Abwesenheit von Flags). Theoretisch also drei Zustände als Rückgabewerte einer Funktion. Praktisch nutzt das Unterprogramm Test0 diese Möglichkeiten:
 
-...
+´´´
+Test0         CMPI #0,ZIELFELD2
+	            BRC EndeTest0
+	            CMPI #1,ZIELFELD1
+EndeTest0	    RET
+´´´
 
 Test0 soll folgendes zurückgeben: 
 - ob der Pöppel noch im Haus ist (Feld 00)
-- oder ob der Pöppel auf dem Stadtfeld steht (Feld 01)
+- oder ob der Pöppel auf dem Startfeld steht (Feld 01)
 - oder ob der Pöppel "normal" auf dem Brett steht (Feld >= 02)
 
 Und macht das auch:
