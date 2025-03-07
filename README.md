@@ -1,6 +1,8 @@
 # Mensch2090
 Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
+![Mädn](/pics/2090maedn.jpg)
+
 ## Das gute alte Bubblesort
 ...
 
