@@ -26,7 +26,21 @@ Alle Pöppel ziehen nur in eine Richtung (vorwärts, vorwärts, vorwärts!), als
 Also war der erste Schritt - nur so zum Spaß - einen möglichst kurzen Sortier-Algorithmus zu implementieren. 
 
 
-## Alles ist relativ
+## Relativitätstheorie
+
+Jeder Spieler, Mensch oder Maschine, sieht erstmal nur sein eigenes Spielbrett. Das Haus ist also immer 00, das Startfeld immer 01, das letzte Feld vor den vier Positionen im Ziel immer 28 hex. Dadurch können die Programmteile für beide Spieler identisch bleiben. 
+
+Nur beim möglichen und tatsächlichen Schlagen wird es nötig, die beiden Bezugssysteme ineinander umzurechnen. Dazu werden die Unterprogramme Umrechnung und Modulo verwendet. 
+
+Umrechnung addiert zur Pöppel-Position einfach immer ein "halbes Brett" (hexadezimal 14 Felder). Ein eigener Pöppel beispielsweise, der mit einer 6 aus dem Haus kommt und auf dem Startfeld 01 landet, steht für den gegnerischen Spieler ja auf Feld 15 hex, also 01 + 14 = 15 hex. 
+
+Das Ganze funktioniert aber nicht mehr, wenn die eigene Position größer als ein halbes Brett ist (Position >= 15 hex), dann muss nach Umrechnung noch eine Korrektur um ein ganzes Brett erfolgen.
+
+Zum Beispiel landet der eigene Pöppel nach einem (unglücklichen) Wurf direkt auf dem Startfeld des Gegners. Das lässt allgemein die Nervosität steigen, muss aber korrekt berechnet werden:
+
+Umrechnung 15 + 14 = 29 
+Modulo     29 - 28 = 01 
+
 
 ## Würfel
 
