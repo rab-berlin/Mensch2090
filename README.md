@@ -4,7 +4,19 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 ![Mädn](/pics/2090maedn.jpg)
 
 ## Das gute alte Bubblesort
-...
+
+Schon vor Beginn der Programmierung von Mädn hatte ich den Gedanken, dass es für viele Tests und Funktionen vorteilhaft sein könnte, wenn die Pöppel eines Spielers in einer geordneten Reihenfolge, also sortiert wären.
+
+Also war der erste Schritt - nur so zum Spaß - zunächst einen möglichst kurzen Sortier-Algorithmus zu implementieren. Die Positionen von vier Pöppeln auf dem Spielbrett (P1-P4) liegen in den Registern 0-7:
+
+- P1 in den Registern 0 und 1
+- P2 in den Registern 2 und 3
+- P3 in den Registern 4 und 5
+- P4 in den Registern 6 und 7
+
+Wenn P1 noch im Haus ist, dann steht in beiden Registern 0 und 1 eine 0. Steht er auf dem Startfeld, ist im Register 0 eine 1 und im (höherwertigen) Register 1 eine 0. Wenn er im Ziel auf der allerhöchsten Position ist, dann steht im Register 0 ein C und im Register 1 eine 2 - das Spielbrett hat insgesamt 2C hex, also 44 Felder.
+
+
 
 ## Alles ist relativ
 
