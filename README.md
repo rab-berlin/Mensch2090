@@ -50,6 +50,18 @@ Das erste "eigene" Programm des Microtronic war ein "elektronischer Würfel" (An
 
 ![Allererstes Programm](/pics/erstes.jpg)
 
+Mnemonisiert und leicht gekürzt:
+
+```
+Würfel	RND
+	CMPI #0,AUGEN
+	BRZ Würfel
+	CMPI #6,AUGEN
+        BRZ Würfel
+        ...
+```
+
+
 Über 40 Jahre war ich der Überzeugung, kürzer geht's nicht.
 
 Geht's aber doch! Ein Vergleich mit 0 ist nicht nötig, stattdessen addieren wir einfach 1 zu einer Zufallszahl zwischen 0 und 5:
@@ -59,6 +71,7 @@ Würfel	RND
 	CMPI #5,AUGEN
 	BRC Würfel
 	ADDI #1,AUGEN
+        ...
 ```
 Kleinvieh macht auch Mist, spart einen Befehl.
 
