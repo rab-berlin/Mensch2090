@@ -14,7 +14,10 @@ Die Positionen der vier Pöppel auf dem Spielbrett (P1-P4) liegen in den Registe
 - P3 in den Registern 4 und 5
 - P4 in den Registern 6 und 7
 
-Wenn P1 noch im Haus ist, dann steht in beiden Registern 0 und 1 eine 0. Steht er auf dem Startfeld, ist im Register 0 eine 1 und im (höherwertigen) Register 1 eine 0. Wenn er im Ziel auf der allerhöchsten Position ist, dann steht im Register 0 ein C und im Register 1 eine 2 - das Spielbrett hat insgesamt 2C hex, also 44 Felder.
+P4 ist immer der weitest fortgeschrittene Pöppel, P1 hingegen immer der hinterste Pöppel. 
+
+
+Wenn P1 noch im Haus ist, dann steht in beiden Registern 0 und 1 eine 0. Steht er auf dem Startfeld, ist im Register 0 eine 1 und im (höherwertigen) Register 1 eine 0. Wenn er im Ziel auf der allerhöchsten Position ist, dann steht im Register 0 ein C und im Register 1 eine 2.
 
 
 ## Das gute alte Bubblesort
