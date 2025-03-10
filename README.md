@@ -57,7 +57,7 @@ Würfel	RND
 	CMPI #0,AUGEN
 	BRZ Würfel
 	CMPI #6,AUGEN
-        BRZ Würfel
+        BRC Würfel
         ...
 ```
 
