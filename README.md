@@ -23,7 +23,25 @@ Schon vor Beginn der Programmierung von Mädn hatte ich den Gedanken, dass es f�
 
 Alle Pöppel ziehen nur in eine Richtung (vorwärts, vorwärts, vorwärts!), also kann ein potentieller Zug nur durch diejenigen eigenen Pöppel blockiert sein, die *vor* der ziehenden Spielfigur stehen. 
 
-Also war der erste Schritt - nur so zum Spaß - einen möglichst kurzen Sortier-Algorithmus zu implementieren. 
+Also war der erste Schritt - nur so zum Spaß - einen Sortier-Algorithmus auf dem Microtronic zu implementieren. Warum nicht Bubblesort?! Der Algorithmus ist einfach und verhältnismäßig kurz an Programmschritten, wenn man auf schrittweise Reduzierung der Schleifenlänge verzichtet. Um 4 Pöppel zu sortieren, muss 3x eine Schleife durchlaufen werden, in der jeweils das größte Element nach oben steigt.
+
+Bubblesort als Programm für den 2090.
+
+## Hammses nich ne Numma kleena?
+
+In Berlin ein geflügeltes Wort, wenn man ausdrücken will, dass eine Sache möglicherweise übertrieben ist. Ist der volle Bubblesort-Algorithmus vielleicht gar nicht nötig? 
+
+Ja, es geht auch ne Numma kleena... Dazu musste ich die zu sortierende Menge genauer betrachten und feststellen, dass diese ja immer teil-sortiert ist (und sich insoweit von völlig unsortierten Mengen unterscheidet). Nur zwei Ereignisse (Operationen) können die Reihenfolge der Sortierung verändern: 
+
+- eine eigene Figur zieht
+- eine fremde Figur wird geschlagen
+
+Wenn eine eigene Figur zieht, vergrößert sich nur das Feld eines einzigen Pöppels um die gewürfelte Augenzahl. Daher reicht ein einziger Durchlauf von P1 > P2 bis P3 > P4, wonach die Reihenfolge aller Pöppel wieder korrekt, also aufsteigend ist. Drei Bubblesort-Durchläufe sind gar nicht nötig. 
+
+Wenn eine fremde Figur geschlagen wird, wird das Feld dieses Pöppels auf 00 gesetzt. Bubblesort müsste hier - schlimmstenfalls - 3x durchlaufen, bis die Reihenfolge wieder korrekt, also Feld 00 ganz nach unten gewandert ist. Einfacher (und schneller) geht's so:
+
+...
+
 
 
 ## Relativitätstheorie
