@@ -151,11 +151,10 @@ Das Ganze funktioniert aber nicht mehr, wenn die eigene Position größer als ei
 
 Zum Beispiel landet der eigene Pöppel nach einem (unglücklichen) Wurf direkt auf dem Startfeld des Gegners. Das lässt allgemein die Nervosität steigen, muss aber korrekt berechnet werden:
 
-- Umrechnung   **15** + 14 = 29    (15 = eigene Feldnummer)
-- Korrektur    29 - 28 = **01**    (01 = gegnerische Feldnummer)
-
-
-
+```
+Umrechnung:        15 + 14 = 29         (15 = eigene Feldnummer)
+Korrektur:         29 - 28 = 01         (01 = gegnerische Feldnummer)
+```
 
 ## Würfel
 
