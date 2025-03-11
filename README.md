@@ -44,7 +44,10 @@ Nun müssen die Pöppel neu geordnet werden, denn P3 ist - durch den Wurf - inzw
 
 Schon vor Beginn der Programmierung von Mädn hatte ich den Gedanken, dass es für viele Tests und Funktionen vorteilhaft sein könnte, wenn die Pöppel eines Spielers immer in einer geordneten Reihenfolge, also sortiert wären.
 
-Alle Pöppel ziehen nur in eine Richtung (vorwärts, vorwärts, vorwärts!), also kann ein potentieller Zug nur durch diejenigen eigenen Pöppel blockiert sein, die *vor* der ziehenden Spielfigur stehen. 
+Ein paar Beispiele, wo Sortierung der Pöppel nützlich sein kann:
+- Um festzustellen, ob noch Pöppel im Häuschen sind, genügt es, den Pöppel P1 zu testen. Ist sein Feld 00, dann ist mindestens ein Pöppel noch im Häuschen.
+- Um festzustellen, ob ein Spieler gewonnen hat, muss nur geprüft werden, ob der letzte Pöppel (P1) gerade das Feld 29 hex erreicht hat. Da alle anderen Pöppel (P2-P4) in der Sortierung vor ihm liegen, müssen sie bereits im Ziel sein.
+- Alle Pöppel ziehen nur in eine Richtung (vorwärts, vorwärts, vorwärts!), also kann ein potentieller Zug nur durch diejenigen eigenen Pöppel blockiert sein, die *vor* der ziehenden Spielfigur stehen. 
 
 Also war der erste Schritt - nur so zum Spaß - einen Sortier-Algorithmus auf dem Microtronic zu implementieren. Warum nicht Bubblesort?! Der Algorithmus ist einfach und verhältnismäßig kurz an Programmschritten, wenn man auf schrittweise Reduzierung der Schleifenlänge verzichtet. Um 4 Pöppel zu sortieren, muss 3x eine Schleife durchlaufen werden, in der jeweils das größte Element nach oben steigt.
 
