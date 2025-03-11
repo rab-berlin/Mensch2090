@@ -3,9 +3,27 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 ![Mädn](/pics/2090maedn.jpg)
 
+## Spielregeln
+
+Die offiziellen Spielregeln von *Mädn* dürften viele überraschen. Mich eingeschlossen...
+
+- Zu Beginn sind 3 Pöppel im Häuschen, ein Pöppel steht bereits auf dem Startfeld.
+- Dafür entfällt das 3-malige Würfeln, um eine 6 zu bekommen, generell.
+- Im Ziel dürfen eigene Pöppel übersprungen werden.
+
+Tatsächlich erleichtern diese Regeln die Implementierung beträchtlich. Insbesondere das "3x Würfeln" ist schwierig umzusetzen, da immer beachtet werden muss, ob noch irgendwo eine theoretische Zugmöglichkeit besteht, bevor man dreimal versuchen darf, eine 6 zu würfeln.
+
+Ja, ich weiß. Gelernt haben wir alle die "Familienregeln".
+
 ## Spielbrett
 
-Das Spielbrett hat - angefangen vom Startfeld bis zur letztmöglichen Position im Ziel - insgesamt 44 Felder. Hexadezimal geht die Reise eines einzelnen Pöppels also von Feld 00 (im Häuschen) über Feld 01 (Startfeld) bis zu - maximal - Feld 2C (letztes Feld im Ziel).
+Das Spielbrett hat - angefangen vom Startfeld bis zur letztmöglichen Position im Ziel - insgesamt 44 Felder. Da der Microtronic 2090 Hexadezimalzahlen liebt, wollen wir ihn nicht schon vor Spielbeginn ärgern. Hexadezimal geht die Reise eines einzelnen Pöppels also 
+
+- von Feld 00 (im Häuschen)
+- über Feld 01 (Startfeld) bis zu
+- maximal Feld 2C (letztes Feld im Ziel, entspricht dezimal 44).
+
+## Pöppel (Püppchen, Figur, Spielfigur...)
 
 Die Positionen der vier Pöppel auf dem Spielbrett (P1-P4) liegen in den Registern 0-7:
 
@@ -145,18 +163,6 @@ Kleinvieh macht auch Mist, spart einen Befehl.
 
 
 geht's
-
-## Die Regeln
-
-Die offiziellen Spielregeln von Mädn dürften viele überraschen. Mich eingeschlossen...
-
-- Zu Beginn sind nur 3 Pöppel im Häuschen, ein Pöppel steht bereits auf dem Startfeld.
-- Dafür entfällt das 3-malige Würfeln, um eine 6 zu bekommen, generell.
-- Im Ziel dürfen eigene Pöppel übersprungen werden.
-
-Tatsächlich erleichtern diese Regeln die Implementierung beträchtlich. Insbesondere das "3x Würfeln" ist schwierig umzusetzen, da immer beachtet werden muss, ob noch irgendwo eine theoretische Zugmöglichkeit besteht, bevor man dreimal versuchen darf, eine 6 zu würfeln.
-
-Ja, ich weiß. Gelernt haben wir alle die "Familienregeln".
 
 
 ## Strategie
