@@ -1,7 +1,29 @@
 # Mensch2090
-Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
+
+Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090...
 
 ![Mädn](/pics/2090maedn.jpg)
+
+## tl;dr
+
+Ich will spielen! 
+
+Na klar, dann lies kurz die Spielregeln (nächster Abschnitt) und beachte folgendes:
+
+- Du brauchst ein Spielbrett. Ich hatte keins und hab mir eins selbst gemalt.
+- Und Pöppel für zwei Spieler brauchst du auch.
+- Programmstart mit **HALT - NEXT - 00 - RUN**. Erneuter Start nur mit RESET-Taste (weil auch die Speicherregister gelöscht werden müssen)
+- Die LED an Ausgang 4 zeigt, wer dran ist. Wenn sie leuchtet, ist der Mensch dran. Wenn nicht, zieht der 2090.
+- Zu Beginn leuchtet sie nicht, also fängt der Microtronic immer an.
+- Die gewürfelte Augenzahl wird angezeigt.
+- 	Ist der Microtronic dran, berechnet er seinen Zug danach automatisch.
+- 	Ist der Mensch dran, wählt er nach dem Wurf, welcher Pöppel gezogen werden soll (Taste 1 - 4). Ungültige Züge werden nicht akzeptiert.
+- Der Zug wird nach Berechnung (2090) oder Auswahl (Mensch) angezeigt in der Form **XY**: **Pöppel X** zieht **Y Felder** weiter.
+- 	Die Anzeige **45** bedeutet z.B., **Pöppel 4** (der weitest fortgeschrittene) zieht **5 Felder** vor.
+- Wenn jemand gewonnen hat, hält das Programm an.
+
+Tipp: Achte gut darauf, jeden Zug auf dem Spielbrett richtig auszuführen. Wenn was nicht stimmt, müsstest du mühsam in allen Registern nachsehen, wo die einzelnen Pöppel wirklich stehen (das geht mit dem Microtronic NextGen ganz gut, mit dem echten Microtronic ist das schon schwieriger, insbesondere die Speicherregister lassen sich nicht so einfach überprüfen).
+
 
 ## Spielregeln
 
