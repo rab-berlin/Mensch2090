@@ -141,9 +141,9 @@ Anstatt Bubblesort den geschlagenen Pöppel in drei Durchläufen nach unten sort
 
 ## Relativitätstheorie
 
-Jeder Spieler, Mensch oder Maschine, sieht erstmal nur sein eigenes Spielbrett. Das Haus ist also immer 00, das Startfeld immer 01, das letzte Feld vor den vier Positionen im Ziel immer 28 hex. Dadurch können die Programmteile für beide Spieler identisch bleiben. 
+Jeder Spieler, Mensch oder Maschine, sieht erstmal nur sein eigenes Spielbrett. Das Häuschen ist also immer 00, das Startfeld immer 01, das letzte Feld vor den vier Positionen im Ziel immer 28 hex. Dadurch können die Programmteile für beide Spieler identisch bleiben. 
 
-Nur beim möglichen und tatsächlichen Schlagen wird es nötig, die beiden Bezugssysteme ineinander umzurechnen. Dazu werden die Unterprogramme Umrechnung und Modulo verwendet. 
+Nur beim möglichen und tatsächlichen Schlagen wird es nötig, die beiden Bezugssysteme ineinander umzurechnen. Dazu werden die Unterprogramme Umrechnung und Korrektur verwendet. 
 
 Umrechnung addiert zur Pöppel-Position einfach immer ein "halbes Brett" (hexadezimal 14 Felder). Ein eigener Pöppel beispielsweise, der mit einer 6 aus dem Haus kommt und auf dem Startfeld 01 landet, steht für den gegnerischen Spieler ja auf Feld 15 hex, also 01 + 14 = 15 hex. 
 
@@ -151,8 +151,10 @@ Das Ganze funktioniert aber nicht mehr, wenn die eigene Position größer als ei
 
 Zum Beispiel landet der eigene Pöppel nach einem (unglücklichen) Wurf direkt auf dem Startfeld des Gegners. Das lässt allgemein die Nervosität steigen, muss aber korrekt berechnet werden:
 
-Umrechnung 15 + 14 = 29 
-Modulo     29 - 28 = 01 
+- Umrechnung   **15** + 14 = 29    (15 = eigene Feldnummer)
+- Korrektur    29 - 28 = **01**    (01 = gegnerische Feldnummer)
+
+
 
 
 ## Würfel
