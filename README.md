@@ -14,12 +14,32 @@ Die Positionen der vier Pöppel auf dem Spielbrett (P1-P4) liegen in den Registe
 - P3 in den Registern 4 und 5
 - P4 in den Registern 6 und 7
 
-P4 ist immer der weitest fortgeschrittene Pöppel, P1 hingegen immer der hinterste Pöppel. 
+P4 soll immer der weitest fortgeschrittene Pöppel sein, P1 hingegen immer der hinterste Pöppel. Das bedeutet, dass die Bezeichnungen wechseln können, wenn sich die Positionen der Pöppel relativ zueinander verändern. Dazu ein Beispiel:
 
+- P1 und P2 sind noch im Häuschen, also beide auf Feld 00.
+- P3 steht auf Feld 01 (Startfeld).
+- P4 steht auf Feld 04.
 
-Wenn P1 noch im Haus ist, dann steht in beiden Registern 0 und 1 eine 0. Steht er auf dem Startfeld, ist im Register 0 eine 1 und im (höherwertigen) Register 1 eine 0. Wenn er im Ziel auf der allerhöchsten Position ist, dann steht im Register 0 ein C und im Register 1 eine 2.
+```
+Pöppel      Register        Feld
+  P1          0  1          0  0
+  P2          2  3          0  0
+  P3          4  5          1  0
+  P4          6  7          4  0
+```
 
+Nun würfelt der Spieler eine 5. Weil noch Pöppel im Häuschen sind, darf P4 nicht ziehen, P3 muss das Startfeld räumen.
+```
+Pöppel      Register        Feld
+  P1          0  1          0  0
+  P2          2  3          0  0
+  P3          4  5          6  0              Feld 01 + 5 Augen = Feld 06 
+  P4          6  7          4  0
+```
 
+Nun müssen die Pöppel neu geordnet werden, denn P3 ist - durch den Wurf - inzwischen auf dem Spielbrett weiter vorne als P4.
+
+ 
 ## Das gute alte Bubblesort
 
 Schon vor Beginn der Programmierung von Mädn hatte ich den Gedanken, dass es für viele Tests und Funktionen vorteilhaft sein könnte, wenn die Pöppel eines Spielers immer in einer geordneten Reihenfolge, also sortiert wären.
