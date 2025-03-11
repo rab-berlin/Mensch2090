@@ -6,20 +6,18 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090...
 
 ## tl;dr
 
-Ich will spielen! 
-
-Na klar, dann lies kurz die Spielregeln (nächster Abschnitt) und beachte folgendes:
+Ich will spielen! Na klar, dann lies kurz die _offiziellen Spielregeln_ (nächster Abschnitt) und beachte folgendes:
 
 - Du brauchst ein Spielbrett. Ich hatte keins und hab mir eins selbst gemalt.
 - Und Pöppel für zwei Spieler brauchst du auch.
 - Programmstart mit **HALT - NEXT - 00 - RUN**. Erneuter Start nur mit RESET-Taste (weil auch die Speicherregister gelöscht werden müssen)
 - Die LED an Ausgang 4 zeigt, wer dran ist. Wenn sie leuchtet, ist der Mensch dran. Wenn nicht, zieht der 2090.
 - Zu Beginn leuchtet sie nicht, also fängt der Microtronic immer an.
-- Die gewürfelte Augenzahl wird angezeigt.
--- Ist der Microtronic dran, berechnet er seinen Zug nach dem Wurf automatisch.
--- Ist der Mensch dran, wählt er nach dem Wurf, welcher Pöppel gezogen werden soll (Taste 1 - 4). Ungültige Züge werden nicht akzeptiert.
-- Der Zug wird nach Berechnung (2090) oder Auswahl (Mensch) angezeigt in der Form **XY**: **Pöppel X** zieht **Y Felder** weiter.
--- Die Anzeige **45** bedeutet z.B., **Pöppel 4** (der weitest fortgeschrittene) zieht **5 Felder** vor.
+- Die gewürfelte Augenzahl wird einstellig angezeigt.
+  - Ist der Microtronic dran, berechnet er seinen Zug nach dem Wurf automatisch.
+  - Ist der Mensch dran, wählt er nach dem Wurf, welcher Pöppel gezogen werden soll (Taste 1 - 4). Ungültige Züge werden nicht akzeptiert.
+- Der Zug wird nach Berechnung (2090) oder Auswahl (Mensch) zweistellig angezeigt in der Form **XY**: **Pöppel X** zieht **Y Felder** weiter.
+  - Die Anzeige **45** bedeutet z.B., **Pöppel 4** (der weitest fortgeschrittene) zieht **5 Felder** vor.
 - Wenn jemand gewonnen hat, hält das Programm an.
 
 Tipp: Achte gut darauf, jeden Zug auf dem Spielbrett richtig auszuführen. Wenn was nicht stimmt, müsstest du mühsam in allen Registern nachsehen, wo die einzelnen Pöppel wirklich stehen (das geht mit dem Microtronic NextGen ganz gut, mit dem echten Microtronic ist das schon schwieriger, insbesondere die Speicherregister lassen sich nicht so einfach überprüfen).
@@ -27,11 +25,13 @@ Tipp: Achte gut darauf, jeden Zug auf dem Spielbrett richtig auszuführen. Wenn 
 
 ## Spielregeln
 
-Die offiziellen Spielregeln von *Mädn* dürften viele überraschen. Mich eingeschlossen...
+Die _offiziellen Spielregeln_ von *Mädn* dürften viele überraschen. Mich eingeschlossen...
 
 - Zu Beginn sind 3 Pöppel im Häuschen, ein Pöppel steht bereits auf dem Startfeld.
 - Dafür entfällt das 3-malige Würfeln, um eine 6 zu bekommen, generell.
 - Im Ziel dürfen eigene Pöppel übersprungen werden.
+
+So steht es geschrieben! Wer´s nicht glaubt, möge nachsehen.
 
 Tatsächlich erleichtern diese Regeln die Implementierung beträchtlich. Insbesondere das "3x Würfeln" ist schwierig umzusetzen, da immer beachtet werden muss, ob noch irgendwo eine theoretische Zugmöglichkeit besteht, bevor man dreimal versuchen darf, eine 6 zu würfeln.
 
