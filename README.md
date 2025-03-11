@@ -145,6 +145,20 @@ Kleinvieh macht auch Mist, spart einen Befehl.
 
 
 geht's
+
+## Die Regeln
+
+Die offiziellen Spielregeln von Mädn dürften viele überraschen. Mich eingeschlossen...
+
+- Zu Beginn sind nur 3 Pöppel im Häuschen, ein Pöppel steht bereits auf dem Startfeld.
+- Dafür entfällt das 3-malige Würfeln, um eine 6 zu bekommen, generell.
+- Im Ziel dürfen eigene Pöppel übersprungen werden.
+
+Tatsächlich erleichtern diese Regeln die Implementierung beträchtlich. Insbesondere das "3x Würfeln" ist schwierig umzusetzen, da immer beachtet werden muss, ob noch irgendwo eine theoretische Zugmöglichkeit besteht, bevor man dreimal versuchen darf, eine 6 zu würfeln.
+
+Ja, ich weiß. Gelernt haben wir alle die "Familienregeln".
+
+
 ## Strategie
 
 Auf den ersten Blick sollte eine Strategie für Mädn relativ einfach zu formulieren sein. Wir haben ein Spiel mit vollständiger Information und einem eng begrenzten Regelwerk. Wir haben allerdings auch nur 256 Programmschritte :-)
