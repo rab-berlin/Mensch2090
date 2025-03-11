@@ -5,7 +5,7 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090. Work in progress...
 
 ## Spielbrett
 
-Das Spielbrett hat - angefangen vom Startfeld bis zur letztmöglichen Position im Ziel - insgesamt 44 Felder. Hexadezimal geht die Reise eines einzelnen Pöppels also von Feld 01 bis zu (maximal) Feld 2C.
+Das Spielbrett hat - angefangen vom Startfeld bis zur letztmöglichen Position im Ziel - insgesamt 44 Felder. Hexadezimal geht die Reise eines einzelnen Pöppels also von Feld 00 (im Häuschen) über Feld 01 (Startfeld) bis zu - maximal - Feld 2C (letztes Feld im Ziel).
 
 Die Positionen der vier Pöppel auf dem Spielbrett (P1-P4) liegen in den Registern 0-7:
 
