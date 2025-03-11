@@ -37,7 +37,7 @@ Pöppel      Register        Feld
   P4          6  7          4  0
 ```
 
-Nun müssen die Pöppel neu geordnet werden, denn P3 ist - durch den Wurf - inzwischen auf dem Spielbrett weiter vorne als P4.
+Nun müssen die Pöppel neu geordnet werden, denn P3 ist - durch den Wurf - inzwischen auf dem Spielbrett weiter vorne als P4. Und diese Sortierung erledigt...
 
  
 ## Das gute alte Bubblesort
