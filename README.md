@@ -67,6 +67,7 @@ SchlagP1	MOVI #0,P12
 SchlagenEnde	EXRL                     eigene Pöppel wieder einblenden
 ```
 
+Anstatt Bubblesort den geschlagenen Pöppel in drei Durchläufen nach unten sortieren zu lassen, rücken einfach die nachfolgenden Pöppel um eine Position auf - und am Schluss wird P1 auf 00 gesetzt.
 
 ## Relativitätstheorie
 
