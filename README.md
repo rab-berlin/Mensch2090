@@ -91,7 +91,7 @@ Ein paar Beispiele, wo Sortierung der Pöppel nützlich sein kann:
 
 Also war der erste Schritt - nur so zum Spaß - einen Sortier-Algorithmus auf dem Microtronic zu implementieren. Warum nicht Bubblesort?! Der Algorithmus ist einfach und verhältnismäßig kurz an Programmschritten, wenn man auf schrittweise Reduzierung der Schleifenlänge verzichtet. Um 4 Pöppel zu sortieren, muss 3x eine Schleife durchlaufen werden, in der jeweils das größte Element nach oben steigt.
 
-Bubblesort als Programm für den 2090.
+![Bubblesort als Programm für den 2090](/program/Bubble.pdf)
 
 ## Hammses nich ne Numma kleena?
 
