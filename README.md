@@ -67,18 +67,18 @@ Wenn eine eigene Figur zieht, vergrößert sich nur das Feld eines einzigen Pöp
 Wenn eine fremde Figur geschlagen wird, wird das Feld dieses Pöppels auf 00 gesetzt. Bubblesort müsste hier - schlimmstenfalls - 3x durchlaufen, bis die Reihenfolge wieder korrekt, also Feld 00 ganz nach unten gewandert ist. Einfacher (und schneller) geht's so:
 
 ```
-Schlagen	CALL Umrechnung	
+Schlagen	CALL Umrechnung	        Zielfeld umrechnen in gegnerische Feldnummerierung
 	        CALL Korrektur	
                 EXRL                    gegnerische Pöppel einblenden
-        	CALL TestAbP4	
-	        BRZ SchlagP4	
-	        CALL TestAbP3	
-	        BRZ SchlagP3	
-	        CALL TestAbP2	
-	        BRZ SchlagP2	
-	        CALL TestAbP1	
-                BRZ SchlagP1	
-	        GOTO SchlagenEnde	
+        	CALL TestAbP4	        Zielfeld und P4 gleich?
+	        BRZ SchlagP4	        dann hau P4 weg
+	        CALL TestAbP3	        Zielfeld und P3 gleich?
+	        BRZ SchlagP3	        dann hau P3 weg
+	        CALL TestAbP2	        Zielfeld und P2 gleich?
+	        BRZ SchlagP2	        dann hau P3 weg
+	        CALL TestAbP1	        Zielfeld und P1 gleich?
+                BRZ SchlagP1	        dann hau P1 weg
+	        GOTO SchlagenEnde	keine gegnerischen Pöppel zu schlagen
 SchlagP4	MOV P32,P42	
 	        MOV P31,P41	
 SchlagP3	MOV P22,P32	
