@@ -102,7 +102,16 @@ Ja, es geht auch ne Numma kleena... Dazu musste ich die zu sortierende Menge gen
 - eine eigene Figur zieht
 - eine fremde Figur wird geschlagen
 
-Wenn eine eigene Figur zieht, vergrößert sich nur das Feld eines einzigen Pöppels um die gewürfelte Augenzahl. Daher reicht ein einziger Durchlauf von P1 > P2 bis P3 > P4, wonach die Reihenfolge aller Pöppel wieder korrekt, also aufsteigend ist. Drei Bubblesort-Durchläufe sind gar nicht nötig. 
+Wenn eine eigene Figur zieht, vergrößert sich nur das Feld eines einzigen Pöppels um die gewürfelte Augenzahl. Daher reicht ein einziger Durchlauf:
+
+- P1 > P2?
+  - Ja, dann tauschen
+- P2 > P3?
+  - Ja, dann tauschen
+- P3 > P4?
+  - Ja, dann tauschen
+
+wonach die Reihenfolge aller Pöppel wieder korrekt, also aufsteigend ist. Drei Bubblesort-Durchläufe sind gar nicht nötig. 
 
 Wenn eine fremde Figur geschlagen wird, wird das Feld dieses Pöppels auf 00 gesetzt. Bubblesort müsste hier - schlimmstenfalls - 3x durchlaufen, bis die Reihenfolge wieder korrekt, also Feld 00 ganz nach unten gewandert ist. Einfacher (und schneller) geht's so:
 
