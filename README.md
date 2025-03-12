@@ -25,7 +25,7 @@ Tipp: Achte gut darauf, jeden Zug auf dem Spielbrett richtig auszuführen. Wenn 
 
 ## Spielregeln
 
-Die _offiziellen Spielregeln_ von *Mädn* dürften viele überraschen. Mich eingeschlossen...
+Die [offiziellen Spielregeln](https://www.schmidtspiele.de/files/Produkte/4/49020%20-%20Standardausgabe/49020_49021_Mensch_aergere_Dich_nicht_DE.pdf) von *Mädn* dürften viele überraschen. Mich eingeschlossen...
 
 - Zu Beginn sind nur 3 Pöppel im Häuschen, **ein Pöppel steht bereits auf dem Startfeld**.
 - Dafür entfällt das 3-malige Würfeln, um eine 6 zu bekommen, generell.
