@@ -6,7 +6,7 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090...
 
 ## tl;dr
 
-Ich will spielen! Na klar, dann lies kurz die _offiziellen Spielregeln_ (nächster Abschnitt) und beachte folgendes:
+Ich will spielen! Na klar, dann lies kurz den nächsten Abschnitt _Spielregeln_ und beachte folgendes:
 
 - Du brauchst ein Spielbrett. Ich hatte keins und hab mir eins selbst gemalt. Und Pöppel für zwei Spieler brauchst du auch.
 - Du musst das Programm [mensch.mic](/program/mensch.mic) auf deinen Microtronic kriegen. Wie du das machst, ist deine Sache :)
