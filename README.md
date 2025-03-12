@@ -9,7 +9,7 @@ Mensch-ärgere-dich-nicht auf dem Busch Microtronic 2090...
 Ich will spielen! Na klar, dann lies kurz die _offiziellen Spielregeln_ (nächster Abschnitt) und beachte folgendes:
 
 - Du brauchst ein Spielbrett. Ich hatte keins und hab mir eins selbst gemalt. Und Pöppel für zwei Spieler brauchst du auch.
-- Du musst das Programm ![mensch.mic](/program/mensch.mic) auf deinen Microtronic kriegen. Wie du das machst, ist deine Sache :)
+- Du musst das Programm [mensch.mic](/program/mensch.mic) auf deinen Microtronic kriegen. Wie du das machst, ist deine Sache :)
 - Programmstart mit **HALT - NEXT - 00 - RUN**. Erneuter Start nur mit RESET-Taste (weil auch die Pöppel im Speicherregister gelöscht werden müssen)
 - Die LED an Ausgang 4 zeigt, wer dran ist. Wenn sie leuchtet, ist der Mensch dran. Wenn nicht, zieht der 2090.
 - Zu Beginn leuchtet sie nicht, also fängt der Microtronic immer an.
