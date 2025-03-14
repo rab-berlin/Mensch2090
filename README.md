@@ -193,8 +193,39 @@ Kleinvieh macht auch Mist, spart einen Befehl.
 
 ## Zugliste
 
+Für den aktiven (am Zug seienden, "dranenen") Spieler wird immer eine Liste der erlaubten Züge aufgebaut. Diese Liste befindet sich im Register E (Zugliste).
 
-geht's
+Für jeden Pöppel, der ziehen kann, also 
+
+- nicht im Häuschen steht,
+- nicht durch eigene Pöppel blockiert ist,
+- und nicht über das Ende des Spielbretts ziehen würde,
+
+wird das entsprechende Bit gesetzt. Beispiel:
+
+```
+Pöppel   Feld      Zugliste       Grund
+
+  P1      00       Bit 1 = 0      noch im Häuschen
+  P2      02       Bit 2 = 0      blockiert durch P3
+  P3      07       Bit 3 = 1      kann ziehen
+  P4      28       Bit 4 = 0      Brettgrenze überschritten
+```
+Nur Bit 3 ist gesetzt, also hat das Register E nach der Berechnung der Zugliste den Wert 4.
+
+Wenn alle 4 Pöppel ziehen könnten, wäre der Wert F in der Zugliste (alle Bits gesetzt).
+
+Falls noch ein Pöppel im Häuschen ist und eine 6 geworfen wurde, wird keine Zugliste aufgebaut, sondern der Zug direkt ausgeführt. Falls ein Pöppel das Startfeld räumen muss, wird die Berechnung der Zugliste abgebrochen, sobald eine Pflicht zum Räumen erkannt wurde.
+
+Die Sortierung der Pöppel ist bei dieser Funktionalität sehr nützlich.
+
+## Zugauswahl
+
+...
+
+## Microtronic ist gewalttätig 
+
+...
 
 
 ## Strategie
