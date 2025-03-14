@@ -10,6 +10,7 @@ Ich will spielen! Na klar, dann lies kurz den nächsten Abschnitt _Spielregeln_ 
 
 - Du brauchst ein Spielbrett. Ich hatte keins und hab mir eins selbst gemalt. Und Pöppel für zwei Spieler brauchst du auch.
 - Du musst das Programm [mensch.mic](/program/mensch.mic) auf deinen Microtronic kriegen. Wie du das machst, ist deine Sache :)
+- Wenn du das Listing abtippen willst und dich die Kommentare brennend interessieren, dann schau dir lieber [Mensch.pdf](/program/Mensch.pdf) an.
 - Programmstart mit **HALT - NEXT - 00 - RUN**. Erneuter Start nur mit RESET-Taste (weil auch die Pöppel im Speicherregister gelöscht werden müssen)
 - Die LED an Ausgang 4 zeigt, wer dran ist. Wenn sie leuchtet, ist der Mensch dran. Wenn nicht, zieht der 2090.
 - Zu Beginn leuchtet sie nicht, also fängt der Microtronic immer an.
