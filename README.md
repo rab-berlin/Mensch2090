@@ -215,7 +215,8 @@ Pöppel   Feld      Zugliste       Grund
 ```
 Nur Bit 3 wird gesetzt, also hat das Register E nach der Berechnung der Zugliste den Wert 4.
 
-Wenn alle 4 Pöppel ziehen könnten, wäre der Wert F in der Zugliste (alle Bits gesetzt).
+- Wenn alle 4 Pöppel ziehen können, wäre der Wert F in der Zugliste (alle Bits gesetzt).
+- Wenn kein Pöppel ziehen kann, wäre der Wert 0 in der Zugliste (kein Bit gesetzt).
 
 Falls noch ein Pöppel im Häuschen ist und eine 6 geworfen wurde, wird keine Zugliste aufgebaut, sondern der Zug direkt ausgeführt. Falls ein Pöppel das Startfeld räumen muss, wird die Berechnung der Zugliste abgebrochen, sobald eine Pflicht zum Räumen erkannt wurde.
 
