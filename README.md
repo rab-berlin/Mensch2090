@@ -201,7 +201,9 @@ Für jeden Pöppel, der ziehen kann, also
 - nicht durch eigene Pöppel blockiert ist,
 - und nicht über das Ende des Spielbretts ziehen würde,
 
-wird das entsprechende Bit gesetzt. Beispiel:
+wird das entsprechende Bit gesetzt. 
+
+Im folgenden Beispiel wurde eine 5 gewürfelt:
 
 ```
 Pöppel   Feld      Zugliste       Grund
@@ -211,7 +213,7 @@ Pöppel   Feld      Zugliste       Grund
   P3      07       Bit 3 = 1      kann ziehen
   P4      28       Bit 4 = 0      Brettgrenze überschritten
 ```
-Nur Bit 3 ist gesetzt, also hat das Register E nach der Berechnung der Zugliste den Wert 4.
+Nur Bit 3 wird gesetzt, also hat das Register E nach der Berechnung der Zugliste den Wert 4.
 
 Wenn alle 4 Pöppel ziehen könnten, wäre der Wert F in der Zugliste (alle Bits gesetzt).
 
