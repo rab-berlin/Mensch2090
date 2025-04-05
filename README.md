@@ -231,7 +231,7 @@ Falls gar kein Zug möglich ist (Zugliste enthält den Wert 0), dann kann kein P
 
 Wenn mindestens ein Zug möglich ist (Zugliste größer 0), dann soll eine Zahl zwischen 1 und 4 eingegeben werden. Damit wird der zu ziehende Pöppel ausgewählt - der weitest fortgeschrittene hat die Zahl 4, der weitest hintenliegende die Zahl 1, die anderen liegen dazwischen. 
 
-Nach der Eingabe wird der Wert binär codiert (gemultiplext?), so dass von den vier möglichen Bits im Register E jeweils **nur ein Bit** ausgewählt ist:
+Nach der Eingabe wird der Wert binär codiert (*gedemultiplext* - if that's a word), so dass von den vier möglichen Bits im Register E jeweils **nur ein Bit** ausgewählt ist:
 
 ```
 Eingabe	   Auswahl  (Multiplex)
