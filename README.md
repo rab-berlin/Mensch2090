@@ -231,18 +231,18 @@ Falls gar kein Zug möglich ist (Zugliste enthält den Wert 0), dann kann kein P
 
 Wenn mindestens ein Zug möglich ist (Zugliste größer 0), dann soll eine Zahl zwischen 1 und 4 eingegeben werden. Damit wird der zu ziehende Pöppel ausgewählt - der weitest fortgeschrittene hat die Zahl 4, der weitest hintenliegende die Zahl 1, die anderen liegen dazwischen. 
 
-Nach der Auswahl wird der eingegebene Wert binär codiert (gemultiplext?), so dass von den vier möglichen Bits jeweils nur ein Bit ausgewählt ist:
+Nach der Eingabe wird der Wert binär codiert (gemultiplext?), so dass von den vier möglichen Bits im Register E jeweils **nur ein Bit** ausgewählt ist:
 
 ```
-Eingabe		Auswahl (Multiplex)
+Eingabe	   Auswahl  (Multiplex)
 
-1		0001     (1 bleibt 1)
-2		0010     (2 bleibt 2)
-3		0100     (3 wird 4)
-4		1000     (4 wird 8)
+   1	    0001    (1 bleibt 1)
+   2	    0010    (2 bleibt 2)
+   3	    0100    (3 wird 4)
+   4	    1000    (4 wird 8)
 ```
 
-Die Eingabe wird dann mit der Zugliste verundet. Was übrigbleibt, ist der Zug, der ausgeführt werden soll. Falls das Ergebnis der AND-Operation 0 ist, kann der gewählte Pöppel laut Zugliste nicht ziehen und es muss erneut eine Auswahl getroffen werden.
+Die Auswahl wird dann mit der Zugliste verundet. Was übrigbleibt, ist der Zug, der ausgeführt werden soll. Falls das Ergebnis der AND-Operation 0 ist, kann der gewählte Pöppel laut Zugliste nicht ziehen und es muss erneut eine Auswahl getroffen werden.
 
 
 
