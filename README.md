@@ -223,9 +223,26 @@ Falls noch ein Pöppel im Häuschen ist und eine 6 geworfen wurde, wird keine Zu
 
 Die Sortierung der Pöppel ist bei dieser Funktionalität sehr nützlich.
 
-## Zugauswahl
+## Bitte ein Bit
 
-...
+Wenn der Mensch am Zug ist, dann wird nach dem Würfeln eine Zugliste erstellt. 
+
+Falls gar kein Zug möglich ist (Zugliste enthält den Wert 0), dann kann kein Pöppel ausgewählt werden, die Anzeige 0X (wobei X die geworfene Augenzahl ist) erfolgt unmittelbar. 
+
+Wenn mindestens ein Zug möglich ist (Zugliste größer 0), dann soll eine Zahl zwischen 1 und 4 eingegeben werden. Damit wird der zu ziehende Pöppel ausgewählt - der weitest fortgeschrittene hat die Zahl 4, der weitest hintenliegende die Zahl 1, die anderen liegen dazwischen. 
+
+Nach der Auswahl wird der Wert binär codiert, so dass von den 4 möglichen Bits jeweils nur ein Bit ausgewählt ist:
+
+1 - 0001
+2 - 0010
+3 - 0100
+4 - 1000
+
+Die Eingabe wird dann mit der Zugliste verundet. Was übrigbleibt, ist der Zug, der ausgeführt werden soll. Falls das Ergebnis der AND-Operation 0 ist, kann der gewählte Pöppel laut Zugliste nicht ziehen und es muss erneut eine Auswahl getroffen werden.
+
+
+
+
 
 ## Microtronic ist gewalttätig 
 
